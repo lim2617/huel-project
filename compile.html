@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>huel Huel-project</title>
+    <link rel="stylesheet" href="compile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="script" ref="compile.js"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="nav__bar">
+            <div class="nav__mobileIcon mobileIcon-Top" id="menu_btn">
+                <svg id="menuIcon-hamburger" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg id="menuIcon-cancel" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>                  
+                <span>Menu</span>              
+            </div>
+            <div class="nav__logo">
+                <a title="Huel website, Public domain, via Wikimedia Commons" href="./index.html"><img alt="Huel Official Logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Huel_Official_Logo.png"></a>
+            </div>
+            <div class="nav__mobileIcon mobileIcon-Top">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+                <span>Basket</span>         
+            </div>
+            <ul class="nav__menu" id="nav__menu">
+                <div class="menu__products">
+                    <div class="nav__menuItem" id="products-button">
+                        <li>Products</li>
+                        <svg id="chevron1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>               
+                    <div class="products-content" id="products-content">
+                        <ul class="products__cards-container">
+                            <li class="products__cards-item">
+                                <div class="products__cards-image">
+                                    <img src="https://huel.imgix.net/media/product/8f12d3b1-e7e9-4a01-b58d-a733b31a855f.png" alt="Build your own bundle">
+                                </div>
+                                <div class="products__cards-text">
+                                    <a href="#">Build your own Bundle</a>
+                                    <span>Mix and match</span>
+                                </div>
+                            </li>
+                            <li class="products__cards-item">
+                                <div class="products__cards-image">
+                                    <img src="https://huel.imgix.net/media/product/5eb7fc57-947d-4a34-b2b6-685766d1e9d7.png" alt="Bestseller Bundle">
+                                </div>
+                                <div class="products__cards-text">
+                                    <a href="#">Bestseller Bundle</a>
+                                    <span>All our favourite products</span>
+                                </div>
+                            </li>
+                            <li class="products__cards-item">
+                                <div class="products__cards-image">
+                                    <img src="https://huel.imgix.net/media/product/b897551c-78af-4335-83b9-317c7ea9bd79.png" alt="Daily Greens">
+                                </div>
+                                <div class="products__cards-text">
+                                    <a href="#">Daily Greens</a>
+                                    <span>Over 147 health benefits</span>
+                                </div>
+                            </li>
+                            <li class="products__cards-item">
+                                <div class="products__cards-image">
+                                    <img src="https://huel.imgix.net/media/product/23712b5c-0e7a-47e7-8094-ec6b958b1890.png" alt="Hot & Savory">
+                                </div>
+                                <div class="products__cards-text">
+                                    <a href="#">Hot & Savory</a>
+                                    <span>Warm and tasty</span>
+                                </div>
+                            </li>
+                            <li class="products__cards-item">
+                                <div class="products__cards-image">
+                                    <img src="https://huel.imgix.net/media/product/28765294-d685-4d07-aaa1-d6cf5d699de4.png" alt="Black Edition">
+                                </div>
+                                <div class="products__cards-text">
+                                    <a href="#">Black Edition</a>
+                                    <span>High-protein meal</span>
+                                </div>
+                            </li>
+                            <li class="products__cards-item">
+                                <div class="products__cards-image">
+                                    <img src="https://huel.imgix.net/media/product/11bf5dea-e19e-4550-a8e9-f590953cf970.png" alt="Ready-to-drink">
+                                </div>
+                                <div class="products__cards-text">
+                                    <a href="#">Ready-to-drink</a>
+                                    <span>Our favorite</span>
+                                </div>
+                            </li>
+                            <li class="products__cards-item">
+                                <div class="products__cards-image">
+                                    <img src="https://cdn.shopify.com/s/files/1/0578/1097/files/Tshirt.png" alt="Clothing">
+                                </div>
+                                <div class="products__cards-text">
+                                    <a href="#">Clothing</a>
+                                    <span>Ethically made sustainable clothing</span>
+                                </div>
+                            </li>
+                            <li class="products__cards-item products__find-your-huel">
+                                <div>
+                                    <a href="#">Which Huel is right for me?</a>
+                                    <p>Find your perfect Huel</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>                            
+                            </li>
+                        </ul>
+                        <div class="all-products-link">
+                            <a href="#">All Huel Products</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>                          
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__nutrition">
+                    <div class="nav__menuItem" id="nutrition-button">
+                        <li >Nutrition</li>   
+                        <svg id="chevron2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg> 
+                    </div>
+                    <ul class="nutrition-content" id="nutrition-items">
+                        <li>Daily Greens</li>
+                        <li>Hot & Savory</li>
+                        <li>Powder</li>
+                        <li>Black Edition</li>
+                        <li>Essential</li>
+                        <li>Ready-to-drink</li>
+                        <li>Bar</li>
+                        <li>Complete Protein</li>
+                        <li>Complete Protein Bar</li>  
+                    </ul>
+                </div>                 
+                <div class="nav__menuItem">
+                    <li>Sustainability</li>
+                </div>
+                <div class="nav__menuItem">
+                    <li>About</li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg> 
+                </div>
+                <div class="nav__menuItem">
+                    <li>Guides & Articles</li>
+                </div>
+                <!-- the three icons on bottom of mobile screen -->
+                <div class="nav__mobileBottom">
+                    <div class="nav__mobileIcon mobileIcon-Bottom" id="mobile-searchBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>   
+                        <span>Search</span>         
+                    </div>
+                    <div class="search__wrapper" id="mobile-search">
+                        <form class="search__bar" id="mobile-searchBar" action="">
+                            <input class="search__input" id="mobile-searchInput" type="text" placeholder="Enter your search terms...">
+                        </form>
+                    </div>
+                    <div class="nav__mobileIcon mobileIcon-Bottom">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                        </svg> 
+                        <span>Account</span>         
+                    </div>
+                    <div id="mobile-flagIcon" class="nav__flag nav__mobileIcon mobileIcon-Bottom">
+                        <img src="https://vectorflags.s3.amazonaws.com/flags/us-square-01.png" alt="">
+                        <span>Language</span>   
+                    </div>   
+                </div>
+                <div class="backdrop"></div>
+            </ul>
+            <!-- the four icons on top right of desktop screen -->
+            <div class="nav__desktopIconWrapper">
+                <div id="desktop-flagIcon" class="nav__flag nav__desktopIcon">
+                    <img src="https://vectorflags.s3.amazonaws.com/flags/us-square-01.png" alt="">
+                </div>
+                <div class="nav__desktopIcon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                    </svg>              
+                </div>
+                <div class="nav__desktopIcon search-btn" id="search-btn1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>           
+                </div>
+                <div class="nav__desktopIcon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="search__wrapper" id="search-wrapper">
+            <form class="search__bar" action="">
+                <input class="search__input" type="text" placeholder="Enter your search terms...">
+                <div class="search__aside">
+                    <span>Hit enter to search</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                </div>
+            </form>
+        </div>
+        <div class="backdrop" id="backdrop"></div>
+        
+        <div class="stores-location" id="stores-location" >
+            <svg id="cancel-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div class="all-stores">
+                <h1>All Stores</h1>
+                
+                <h2>Suggested location</h2>
+                <div class="countries-grid">
+                    <div class="countries">
+                        <img class="stores__flag" src="https://flagdownload.com/wp-content/uploads/Flag_of_Malaysia_Flat_Square-1024x1024.png" alt="Malaysia Flag">
+                        <div class="stores__country">
+                            <h5>Malaysia</h5>
+                            <span>(English)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Africa</h2>
+                <div class="countries-grid">
+                    <div class="countries">
+                        <img class="stores__flag" src="data:image/png;base64,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" alt="South Africa Flag">
+                        <div class="stores__country">
+                            <h5>South Africa</h5>
+                            <span>(English)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Americas</h2>
+                <div class="countries-grid">
+                    <div class="countries">
+                        <img class="stores__flag" src="data:image/png;base64,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" alt="Bermuda Flag">
+                        <div class="stores__country">
+                            <h5>Bermuda</h5>
+                            <span>(English)</span>
+                        </div>
+                    </div>
+                    <div class="countries">
+                        <img class="stores__flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Brazilian_flag_icon_square.svg/768px-Brazilian_flag_icon_square.svg.png" alt="Brazil Flag">
+                        <div class="stores__country">
+                            <h5>Brazil</h5>
+                            <span>(English)</span>
+                        </div>
+                    </div>
+                    <div class="countries">
+                        <img class="stores__flag" src="data:image/png;base64,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" alt="US Flag">
+                        <div class="stores__country">
+                            <h5>United States</h5>
+                            <span>(English)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Asia</h2>
+                <div class="countries-grid">
+                    <div class="countries">
+                        <img class="stores__flag" src="https://vectorflags.s3.amazonaws.com/flags/hk-square-01.png" alt="Hong Kong Flag">
+                        <div class="stores__country">
+                            <h5>Hong Kong</h5>
+                            <span>(English)</span>
+                        </div>
+                    </div>
+                    <div class="countries">
+                        <img class="stores__flag" src="data:image/png;base64,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" alt="India Flag">
+                        <div class="stores__country">
+                            <h5>India</h5>
+                            <span>(English)</span>
+                        </div>
+                    </div>
+                    <div class="countries">
+                        <img class="stores__flag" src="https://vectorflags.s3.amazonaws.com/flags/jp-square-01.png" alt="Japan Flag">
+                        <div class="stores__country">
+                            <h5>Japan</h5>
+                            <span>(日本語)</span>
+                        </div>
+                    </div>
+                    <div class="countries">
+                        <img class="stores__flag" src="https://vectorflags.s3.amazonaws.com/flags/sg-square-01.png" alt="Singapore Flag">
+                        <div class="stores__country">
+                            <h5>Singapore</h5>
+                            <span>(English)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+<script src="/compile-project/compile.js"></script>
+
+<!--ellie part-->
+
+<section class="big_column">
+    
+    <div class="text_column column3_ellie">
+        <h1 class="bigtext_heading">Fast Food, <br> Not Junk Food</h1>
+        <p class="bigtext_sub"><b>Save time and money with Huel</b><br>Ready in moments, Huel is the no-prep meal that doesn't <br> compromise on your health. Less time cooking, more time living.
+        </p><br>
+        <a href="#" class="shophuelbutton">Shop Huel</a>
+    </div>
+
+    <div class="img_column column3_ellie">
+        <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/US-Hero-Banner-SOLID_1.jpg?v=1670925832" alt="Huel products">
+    </div>
+
+</section>
+
+<section>
+    <div class="banner">
+ 
+    <div class="mediabanner">
+         <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/womenshealth_x25.png?v=1614304165" alt="Women's Health" height="10px">
+    </div>
+ 
+    <div class="mediabanner">
+         <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/Mens_Health_logo_red_51338d88-8732-4e4a-9e0a-ce0a89855614_x25.png?v=1614304165" alt="Men's Health" height="10px">
+    </div>
+ 
+    <div class="mediabanner">
+         <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/cnn_x25.png?v=1613532516" alt="CNN" height="10px">
+    </div>
+ 
+    <div class="mediabanner">
+         <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/Shape_magazine_logo_afb08077-b27b-423b-8efd-f7255d010b1f_x25.jpg?v=1614304165" alt="SHAPE" height="10px">
+    </div>
+ 
+    <div class="mediabanner">
+         <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/vox_x25.png?v=1613795262" alt="VOX" height="10px">
+    </div>
+ 
+    <div class="mediabanner">
+         <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/Screenshot_2022-12-08_at_14.42.16-removebg-preview_x25.png?v=1670510625" alt="TIME" height="10px">
+    </div>
+ 
+    <div class="mediabanner">
+         <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/Fox_Business_Logo_200x_3e3134dc-db0b-4a29-95b4-202474afa1ba_x25.png?v=1613770070" alt="FOX BUSINESS" height="10px">
+    </div>
+ 
+    <div class="mediabanner">
+         <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/wired_logo_98a72b9d-7ce6-4a1c-9651-5fba6a6e6a81_x25.png?v=1613693090" alt="WIRED" height="10px">
+    </div>
+ 
+    </div>
+</section>
+
+<section class="column_parent column_ellie"> 
+    <div class="column_img column_ellie"> 
+        <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/US-Quiz-Desktop.jpg?v=1679992306" alt="Huel breakfast">
+
+        <h2 class="heading_ellie">
+            <span style="background: white; color: black;">Find your perfect Huel</span>
+        </h2>
+
+        <p class="breakfastimg_text"><span style="color: black;background: white;"><b> Need some help finding the right Huel for you?<br>Take a 30-second quiz to find out!</b></span>
+        </p>
+
+        <a href="#" class="whitebutton">Take the quiz</a>
+    </div>
+
+    <div class="column_img column_ellie">
+        <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/Breakfast-is-Ready-Desktop.webp?v=1685006155" alt="Huel bottle">
+
+        <h2 class="heading_ellie">
+            <span style="background: black; color: white;">A match made in <br> nutrition heaven</span>
+        </h2>
+
+        <p class="exercise_text"><span style="color: white; background: black;"><b>Did you know some nutrients can boost <br> the benefits of others? Our nutrition <br> team explains.</b></span>
+        </p>
+
+        <a href="#" class="learnmorebutton">Learn more</a>
+    </div>
+
+</section>
+
+<section class="ladywithbottle_parent">
+    <div class="ladywithbottle_img column2_ellie">
+        <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/US-Burst-Content-Block.jpg?v=1680012940" alt="Lady with Huel bottle">
+    </div>
+    
+    <div class="ladywithbottle column2_ellie">
+        <h2 class="ladywithbottle_heading">Don't change your life - just change lunch</h2>
+        <p class="ladywithbottle_text">You could save five hours a week just by replacing your Monday-to-Friday lunches with Huel. No more meal prep. And no more $15 wilted-salad takeout.
+        <br><br>
+        <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/Huel-orange-check.png?v=1680010624" style="max-height: 12px"> Plant-based sustainable ingredients
+        <br>
+        <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/Huel-orange-check.png?v=1680010624"
+        style="max-height: 12px"> Zero animal products
+        <br>
+        <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/Huel-orange-check.png?v=1680010624" style="max-height: 12px"> Low-sugar, lactose-free
+        <br>
+        <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/Huel-orange-check.png?v=1680010624" style="max-height: 12px"> Can help weight management
+        <br>
+        <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/Huel-orange-check.png?v=1680010624" style="max-height: 12px"> From $1.51 per meal - less than a latte
+        </p><br>
+        <a href="#" class="shopbutton">Shop all Huel products</a>
+    </div>
+</section>
+
+<section class="manwithbottle_parent">
+
+    <div class="manwithbottle column2_ellie">
+        <h2 class="manwithbottle_heading">Subscribe & save 10%</h2>
+        <p class="manwithbottle_text">Save time and money on your favourite Huel products when you subscribe. Choose your frequency and get 10% off your offer.
+        <br><br>
+        <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/Huel-orange-check.png?v=1680010624" style="max-height: 12px"> 10% off every order
+        <br>
+        <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/Huel-orange-check.png?v=1680010624" style="max-height: 12px"> Edit, pause or cancel at any time
+        <br>
+        <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/Huel-orange-check.png?v=1680010624" style="max-height: 12px"> Orders $59+ ship for free
+        </p><br>
+        <a href="#" class="readbutton">Read customer reviews</a>
+    </div>
+
+    <div class="manwithbottle_img column2_ellie">
+        <img src="https://cdn.shopify.com/s/files/1/1374/5287/files/US-Burst-Content-Block_2.jpg?v=1680012956" alt="Man with Bottle">
+    </div>
+   
+</section>
+
+<section class="HuelBenefits">
+    <div class="column is-12"></div>
+        <section class="symbol_ellie">
+          
+            <div class="HuelBenefits__block black-container">
+              <div class="HuelBenefits__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"><g transform="translate(1.5 1.5)"><path d="M 19.555 12.01 C 19.555 13.943 15.177 15.51 9.777 15.51 C 4.377 15.51 0 13.943 0 12.01 C 0 10.078 4.377 8.513 9.777 8.513 C 15.177 8.513 19.555 10.078 19.555 12.01 Z M 19.555 17.841 C 19.555 19.773 15.177 21.339 9.777 21.339 C 4.377 21.339 0 19.773 0 17.841 M 19.555 23.67 C 19.555 25.604 15.177 27.171 9.777 27.171 C 4.377 27.171 0 25.604 0 23.67" fill="transparent" stroke-width="2" stroke="rgb(255, 255, 255)" stroke-linecap="round" stroke-linejoin="round"></path><path d="M 19.555 12.01 L 19.555 29.501 C 19.555 31.434 15.177 33 9.777 33 C 4.377 33 0 31.434 0 29.502 L 0 12.01 M 33 3.498 C 33 5.43 28.623 6.998 23.22 6.998 C 17.823 6.998 13.445 5.43 13.445 3.498 C 13.445 1.566 17.823 0 23.22 0 C 28.62 0 33 1.566 33 3.498 Z M 33 9.33 C 33 11.26 28.623 12.827 23.22 12.827 C 22.103 12.829 20.986 12.759 19.878 12.617 M 33 15.159 C 33 17.091 28.623 18.657 23.22 18.657 C 22.079 18.657 20.981 18.587 19.962 18.458 M 13.445 8.25 L 13.445 3.498" fill="transparent" stroke-width="2" stroke="rgb(255, 255, 255)" stroke-linecap="round" stroke-linejoin="round"></path><path d="M 33 3.498 L 33 20.989 C 33 22.921 28.623 24.487 23.22 24.487 C 22.047 24.487 20.922 24.414 19.88 24.277" fill="transparent" stroke-width="2" stroke="rgb(255, 255, 255)" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+              </div>
+              <div class="HuelBenefits__block-right">
+                <h3 class="HuelBenefits__sub-heading title is-5">Subscribe & Save 10%</h3>
+                <p class="HuelBenefits__text">Save time and money when you subscribe.  Edit, pause or cancel at anytime.</p>
+              </div>
+            </div>
+
+            <div class="HuelBenefits__block black-container">
+                <div class="HuelBenefits__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"><g transform="translate(3 1.5)"><path d="M 30 17.893 C 30 26.236 23.283 33 15 33 C 6.717 33 0 26.236 0 17.893 C 0 9.55 6.717 2.785 15 2.785 C 23.283 2.785 30 9.55 30 17.893 Z M 16.922 2.644 L 16.922 -0 L 13.171 -0 L 13.171 2.644" fill="transparent" stroke-width="2" stroke="hsl(0, 0%, 100%)" stroke-linecap="round" stroke-linejoin="round"></path><path d="M 5.676 5.832 L 3.82 3.963 L 1.167 6.633 L 3.023 8.503 M 26.297 17.94 C 26.297 24.25 21.217 29.366 14.953 29.366 C 8.688 29.366 3.609 24.25 3.609 17.94 C 3.609 11.63 8.688 6.514 14.953 6.514 C 21.217 6.514 26.297 11.63 26.297 17.94 Z M 14.953 17.94 L 20.625 12.228" fill="transparent" stroke-width="2" stroke="hsl(0, 0%, 100%)" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+                </div>
+                <div class="HuelBenefits__block-right">
+                  <h3 class="HuelBenefits__sub-heading title is-5">Refer a friend & save $15</h3>
+                  <p class="HuelBenefits__text">Help your friends discover Huel and save money while you're at it.</p>
+                </div>
+              </div>
+             
+                <div class="HuelBenefits__block black-container">
+                <div class="HuelBenefits__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="30"><g><path d="M 28.8 25.8 C 30 25.8 30.9 26.7 30.9 27.9 C 30.9 29.1 30 30 28.8 30 L 16.5 30 L 8.25 27.9" fill="transparent" stroke-width="2" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"></path><path d="M 30.9 21.75 C 32.1 21.75 33 22.65 33 23.85 C 33 25.05 32.1 25.95 30.9 25.95 L 25.8 25.95" fill="transparent" stroke-width="2" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"></path><path d="M 30.9 17.55 C 32.1 17.55 33 18.45 33 19.65 C 33 20.85 32.1 21.75 30.9 21.75 L 25.8 21.75" fill="transparent" stroke-width="2" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"></path><path d="M 25.8 17.55 L 30.9 17.55 C 32.1 17.55 33 16.65 33 15.45 C 33 14.4 32.1 13.5 30.9 13.5 L 18.6 13.5" fill="transparent" stroke-width="2" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"></path><path d="M 0 30 L 6.15 30 C 6.15 30 8.25 30 8.25 27.9 L 8.25 13.5 C 8.25 13.5 8.25 11.4 6.15 11.4 L 0 11.4 Z" fill="transparent" stroke-width="2" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"></path><path d="M 8.25 13.5 C 8.25 13.5 16.5 9.9 16.5 2.1 C 16.5 0.9 17.4 0 18.6 0 C 19.2 0 19.65 0.3 20.1 0.6 C 20.1 0.6 21.75 1.95 21.75 9.3 C 21.75 10.8 21.6 12.15 21.15 13.35" fill="transparent" stroke-width="2" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+                </div>
+                <div class="HuelBenefits__block-right">
+                        <h3 class="HuelBenefits__sub-heading title is-5">Free Shipping on Orders $59+</h3>
+                        <p class="HuelBenefits__text">Shop more, save more with free shipping on orders over $59.</p>
+                </div>
+                </div>
+       
+        </section>
+    </div>
+</section>
+
+<!--syahmi part-->
+
+<section class="DietitianApproved">
+    <div class="container2020">
+      <div class="columns">
+        <div class="column is-12">
+          <h2 class="DietitianApproved__heading title is-2">Approved by registered dietitians & nutritionists</h2>
+        </div>
+      </div>
+    </div>
+    
+    
+  
+    <div class="container-syahmi swiper">
+    <div class="slide-container">
+      <div class="card-wrapper swiper-wrapper">
+        <!--Card 1 Start-->
+        <div class="card-syahmi swiper-slide">
+          <svg class="SliderCard__pattern" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 268 153" style="enable-background:new 0 0 268 153;" xml:space="preserve">
+            <style type="text/css">
+              .st0{opacity:0.25;}
+              .st1{fill:#545454;}
+            </style>
+            <g class="st0">
+              <path class="st1" d="M130.8,104.4c-29.3-15.3-49-45.5-66.4-72.1c-7.7-11.8-15-23-22.7-32.3h-1.4c7.9,9.4,15.4,20.9,23.3,32.9
+                c17.5,26.7,37.3,57,66.8,72.5c34,17.8,75.3,13,126.3-14.8c3.8-2.1,7.6-4.2,11.4-6.4v-1.3c-3.9,2.3-7.9,4.5-11.9,6.7
+                C205.4,117.2,164.5,122,130.8,104.4z"/>
+              <path class="st1" d="M117.8,126.8c-32-18.2-53-52.8-71.5-83.3C36.3,27.1,26.8,11.4,16.5,0h-1.6c10.5,11.3,20.2,27.3,30.4,44.1
+                c18.6,30.6,39.7,65.3,72,83.7c37.3,21.2,83,16.9,139.8-13.4c3.7-2,7.3-4,10.9-6v-1.3c-3.8,2.1-7.6,4.2-11.5,6.3
+                C200.1,143.4,154.7,147.8,117.8,126.8z"/>
+              <path class="st1" d="M246.5,0h-1.6c-24.1,13.5-44.7,17.8-63,13.4C171.8,10.9,163.1,6,155.1,0h-1.4c8.3,6.3,17.3,11.6,28,14.2
+                C200.5,18.7,221.7,14.1,246.5,0z"/>
+              <path class="st1" d="M169.2,36.4c-19.6-6.5-34-21.4-47.8-36.4h-1.1c28.3,30.8,61,63.4,135.1,18.8c2.3-1.3,4.6-2.7,6.8-4.1
+                c2-1.2,3.9-2.4,5.8-3.7v-1c-4.2,2.8-8.6,5.4-13.1,8.1C221.2,38.4,193.2,44.4,169.2,36.4z"/>
+              <path class="st1" d="M143.7,81.8c-26.5-12.5-45-38.3-61.2-61C77.3,13.5,72.2,6.4,67.1,0h-1.3c5.3,6.6,10.5,13.9,15.8,21.4
+                c16.4,22.8,34.9,48.7,61.7,61.3C174,97.2,211,91.9,256.2,66.6c4-2.2,7.9-4.5,11.8-6.8v-1.2c-4,2.4-8.1,4.8-12.3,7.1
+                C210.7,90.8,174.1,96.1,143.7,81.8z"/>
+              <path class="st1" d="M156.5,59.2c-23.8-9.7-40.1-30.3-55.9-50.1C98.2,6,95.8,2.9,93.4,0h-1.2c2.6,3.1,5.2,6.3,7.8,9.6
+                c15.9,20,32.3,40.6,56.3,50.4c27.5,11.2,60,5.6,99.6-17.3c4.1-2.4,8.2-4.8,12.2-7.2v-1.1c-4.1,2.6-8.3,5.1-12.7,7.5
+                C216,64.6,183.7,70.3,156.5,59.2z"/>
+            </g>
+          </svg>
+          <div class="SliderCard__top">
+            <img class="SliderCard__img" src="images/profile/michelle.jpg" alt="Michelle Meyer">  
+                  <div>
+                    <p class="SliderCard__heading title is-7">Michelle Meyer <span>RD, Clinical Registered Dietitian</span></p>
+                    <p class="SliderCard__sub-heading"></p>
+                  </div>
+          </div>
+          <p class="SlideCard_review">
+            &ldquo;As a dietitian, real food is ideal. Huel products have real ingredients, like oats, coconut oil, and pea protein. It is easy to prepare and have on the go. Other products on the market often contain fillers and lack the phyto-chemicals that whole foods or a product like Huel provides.&rdquo;
+          </p>
+        </div>
+        <!--Card 1 End-->
+  
+        <!--Card 2 Start-->
+        <div class="card-syahmi swiper-slide">
+          <svg class="SliderCard__pattern" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 268 153" style="enable-background:new 0 0 268 153;" xml:space="preserve">
+            <style type="text/css">
+              .st0{opacity:0.25;}
+              .st1{fill:#545454;}
+            </style>
+            <g class="st0">
+              <path class="st1" d="M130.8,104.4c-29.3-15.3-49-45.5-66.4-72.1c-7.7-11.8-15-23-22.7-32.3h-1.4c7.9,9.4,15.4,20.9,23.3,32.9
+                c17.5,26.7,37.3,57,66.8,72.5c34,17.8,75.3,13,126.3-14.8c3.8-2.1,7.6-4.2,11.4-6.4v-1.3c-3.9,2.3-7.9,4.5-11.9,6.7
+                C205.4,117.2,164.5,122,130.8,104.4z"/>
+              <path class="st1" d="M117.8,126.8c-32-18.2-53-52.8-71.5-83.3C36.3,27.1,26.8,11.4,16.5,0h-1.6c10.5,11.3,20.2,27.3,30.4,44.1
+                c18.6,30.6,39.7,65.3,72,83.7c37.3,21.2,83,16.9,139.8-13.4c3.7-2,7.3-4,10.9-6v-1.3c-3.8,2.1-7.6,4.2-11.5,6.3
+                C200.1,143.4,154.7,147.8,117.8,126.8z"/>
+              <path class="st1" d="M246.5,0h-1.6c-24.1,13.5-44.7,17.8-63,13.4C171.8,10.9,163.1,6,155.1,0h-1.4c8.3,6.3,17.3,11.6,28,14.2
+                C200.5,18.7,221.7,14.1,246.5,0z"/>
+              <path class="st1" d="M169.2,36.4c-19.6-6.5-34-21.4-47.8-36.4h-1.1c28.3,30.8,61,63.4,135.1,18.8c2.3-1.3,4.6-2.7,6.8-4.1
+                c2-1.2,3.9-2.4,5.8-3.7v-1c-4.2,2.8-8.6,5.4-13.1,8.1C221.2,38.4,193.2,44.4,169.2,36.4z"/>
+              <path class="st1" d="M143.7,81.8c-26.5-12.5-45-38.3-61.2-61C77.3,13.5,72.2,6.4,67.1,0h-1.3c5.3,6.6,10.5,13.9,15.8,21.4
+                c16.4,22.8,34.9,48.7,61.7,61.3C174,97.2,211,91.9,256.2,66.6c4-2.2,7.9-4.5,11.8-6.8v-1.2c-4,2.4-8.1,4.8-12.3,7.1
+                C210.7,90.8,174.1,96.1,143.7,81.8z"/>
+              <path class="st1" d="M156.5,59.2c-23.8-9.7-40.1-30.3-55.9-50.1C98.2,6,95.8,2.9,93.4,0h-1.2c2.6,3.1,5.2,6.3,7.8,9.6
+                c15.9,20,32.3,40.6,56.3,50.4c27.5,11.2,60,5.6,99.6-17.3c4.1-2.4,8.2-4.8,12.2-7.2v-1.1c-4.1,2.6-8.3,5.1-12.7,7.5
+                C216,64.6,183.7,70.3,156.5,59.2z"/>
+            </g>
+          </svg>
+          <div class="SliderCard__top">
+            <img class="SliderCard__img" src="images/profile/sharon.webp" alt="Michelle Meyer">  
+                  <div>
+                    <p class="SliderCard__heading title is-7">Sharon Palmer <span>Registered Dietitian - "The Plant-Powered Dietitian"</span></p>
+                    <p class="SliderCard__sub-heading"></p>
+                  </div>
+          </div>
+          <p class="SlideCard_review">
+            &ldquo;Decades of research have supported adopting a plant-rich diet to increase longevity and enhance well-being. Now, we’re also looking for ways to reduce our carbon footprint. Huel’s 100% vegan recipe will do both, while allowing you to take control of your health.&rdquo;
+          </p>
+        </div>
+        <!--Card 2 End-->
+  
+        <!--Card 3 Start-->
+        <div class="card-syahmi swiper-slide">
+          <svg class="SliderCard__pattern" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 268 153" style="enable-background:new 0 0 268 153;" xml:space="preserve">
+            <style type="text/css">
+              .st0{opacity:0.25;}
+              .st1{fill:#545454;}
+            </style>
+            <g class="st0">
+              <path class="st1" d="M130.8,104.4c-29.3-15.3-49-45.5-66.4-72.1c-7.7-11.8-15-23-22.7-32.3h-1.4c7.9,9.4,15.4,20.9,23.3,32.9
+                c17.5,26.7,37.3,57,66.8,72.5c34,17.8,75.3,13,126.3-14.8c3.8-2.1,7.6-4.2,11.4-6.4v-1.3c-3.9,2.3-7.9,4.5-11.9,6.7
+                C205.4,117.2,164.5,122,130.8,104.4z"/>
+              <path class="st1" d="M117.8,126.8c-32-18.2-53-52.8-71.5-83.3C36.3,27.1,26.8,11.4,16.5,0h-1.6c10.5,11.3,20.2,27.3,30.4,44.1
+                c18.6,30.6,39.7,65.3,72,83.7c37.3,21.2,83,16.9,139.8-13.4c3.7-2,7.3-4,10.9-6v-1.3c-3.8,2.1-7.6,4.2-11.5,6.3
+                C200.1,143.4,154.7,147.8,117.8,126.8z"/>
+              <path class="st1" d="M246.5,0h-1.6c-24.1,13.5-44.7,17.8-63,13.4C171.8,10.9,163.1,6,155.1,0h-1.4c8.3,6.3,17.3,11.6,28,14.2
+                C200.5,18.7,221.7,14.1,246.5,0z"/>
+              <path class="st1" d="M169.2,36.4c-19.6-6.5-34-21.4-47.8-36.4h-1.1c28.3,30.8,61,63.4,135.1,18.8c2.3-1.3,4.6-2.7,6.8-4.1
+                c2-1.2,3.9-2.4,5.8-3.7v-1c-4.2,2.8-8.6,5.4-13.1,8.1C221.2,38.4,193.2,44.4,169.2,36.4z"/>
+              <path class="st1" d="M143.7,81.8c-26.5-12.5-45-38.3-61.2-61C77.3,13.5,72.2,6.4,67.1,0h-1.3c5.3,6.6,10.5,13.9,15.8,21.4
+                c16.4,22.8,34.9,48.7,61.7,61.3C174,97.2,211,91.9,256.2,66.6c4-2.2,7.9-4.5,11.8-6.8v-1.2c-4,2.4-8.1,4.8-12.3,7.1
+                C210.7,90.8,174.1,96.1,143.7,81.8z"/>
+              <path class="st1" d="M156.5,59.2c-23.8-9.7-40.1-30.3-55.9-50.1C98.2,6,95.8,2.9,93.4,0h-1.2c2.6,3.1,5.2,6.3,7.8,9.6
+                c15.9,20,32.3,40.6,56.3,50.4c27.5,11.2,60,5.6,99.6-17.3c4.1-2.4,8.2-4.8,12.2-7.2v-1.1c-4.1,2.6-8.3,5.1-12.7,7.5
+                C216,64.6,183.7,70.3,156.5,59.2z"/>
+            </g>
+          </svg>
+          <div class="SliderCard__top">
+            <img class="SliderCard__img" src="images/profile/tavis.jpeg" alt="Tavis Piattoly">  
+                  <div>
+                    <p class="SliderCard__heading title is-7">Tavis Piattoly <span>MS, RD, LDN, Registered Dietitian</span></p>
+                    <p class="SliderCard__sub-heading"></p>
+                  </div>
+          </div>
+          <p class="SlideCard_review">
+            &ldquo;What I love about Huel is its versatility. It provides a comprehensive nutrient profile with a balanced blend of macronutrients along with the complete vitamin and mineral profile. It can be used as a meal for the busy working professional, competitive athlete, or weekend warrior.&rdquo;
+          </p>
+        </div>
+        <!--Card 3 End-->
+  
+        <!--Card 4 Start-->
+        <div class="card-syahmi swiper-slide" data-anim-class="a-fade-in-up" aria-label="4 / 4" style="width: 419px; margin-right: 12px;">
+          <svg class="SliderCard__pattern" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 268 153" style="enable-background:new 0 0 268 153;" xml:space="preserve">
+            <style type="text/css">
+              .st0{opacity:0.25;}
+              .st1{fill:#545454;}
+            </style>
+            <g class="st0">
+              <path class="st1" d="M130.8,104.4c-29.3-15.3-49-45.5-66.4-72.1c-7.7-11.8-15-23-22.7-32.3h-1.4c7.9,9.4,15.4,20.9,23.3,32.9
+                c17.5,26.7,37.3,57,66.8,72.5c34,17.8,75.3,13,126.3-14.8c3.8-2.1,7.6-4.2,11.4-6.4v-1.3c-3.9,2.3-7.9,4.5-11.9,6.7
+                C205.4,117.2,164.5,122,130.8,104.4z"/>
+              <path class="st1" d="M117.8,126.8c-32-18.2-53-52.8-71.5-83.3C36.3,27.1,26.8,11.4,16.5,0h-1.6c10.5,11.3,20.2,27.3,30.4,44.1
+                c18.6,30.6,39.7,65.3,72,83.7c37.3,21.2,83,16.9,139.8-13.4c3.7-2,7.3-4,10.9-6v-1.3c-3.8,2.1-7.6,4.2-11.5,6.3
+                C200.1,143.4,154.7,147.8,117.8,126.8z"/>
+              <path class="st1" d="M246.5,0h-1.6c-24.1,13.5-44.7,17.8-63,13.4C171.8,10.9,163.1,6,155.1,0h-1.4c8.3,6.3,17.3,11.6,28,14.2
+                C200.5,18.7,221.7,14.1,246.5,0z"/>
+              <path class="st1" d="M169.2,36.4c-19.6-6.5-34-21.4-47.8-36.4h-1.1c28.3,30.8,61,63.4,135.1,18.8c2.3-1.3,4.6-2.7,6.8-4.1
+                c2-1.2,3.9-2.4,5.8-3.7v-1c-4.2,2.8-8.6,5.4-13.1,8.1C221.2,38.4,193.2,44.4,169.2,36.4z"/>
+              <path class="st1" d="M143.7,81.8c-26.5-12.5-45-38.3-61.2-61C77.3,13.5,72.2,6.4,67.1,0h-1.3c5.3,6.6,10.5,13.9,15.8,21.4
+                c16.4,22.8,34.9,48.7,61.7,61.3C174,97.2,211,91.9,256.2,66.6c4-2.2,7.9-4.5,11.8-6.8v-1.2c-4,2.4-8.1,4.8-12.3,7.1
+                C210.7,90.8,174.1,96.1,143.7,81.8z"/>
+              <path class="st1" d="M156.5,59.2c-23.8-9.7-40.1-30.3-55.9-50.1C98.2,6,95.8,2.9,93.4,0h-1.2c2.6,3.1,5.2,6.3,7.8,9.6
+                c15.9,20,32.3,40.6,56.3,50.4c27.5,11.2,60,5.6,99.6-17.3c4.1-2.4,8.2-4.8,12.2-7.2v-1.1c-4.1,2.6-8.3,5.1-12.7,7.5
+                C216,64.6,183.7,70.3,156.5,59.2z"/>
+            </g>
+          </svg>
+          <div class="SliderCard__top">
+            <img class="SliderCard__img" src="images/profile/toby.jpeg" alt="Tavis Piattoly">  
+                  <div>
+                    <p class="SliderCard__heading title is-7">Toby Amidor <span>MS, RD, CDN, FAND, Registered Dietitian</span></p>
+                    <p class="SliderCard__sub-heading"></p>
+                  </div>
+          </div>
+          <p class="SlideCard_review">
+            &ldquo;Decades of research have supported adopting a plant-rich diet to increase longevity and enhance well-being. Now, we’re also looking for ways to reduce our carbon footprint. Huel’s 100% vegan recipe will do both, while allowing you to take control of your health.&rdquo;
+          </p>
+        </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <!--Card 4 End-->
+  </section>
+  
+  
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script src="compile.js">
+      </script>
+
+<!--naqib part-->
+<section class="card-section">
+    <div class="header-main">
+        <h2 class="header">Shop the Huel range</h2>
+        <a class="button" href="https://huel.com/collections/other-huel-products" title="Shop all Huel products">Shop all Huel products</a>
+    </div>
+
+    <section class="container">
+        <div class="container-section">
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://huel.com/products/huel-daily-greens"> <img data-src="//cdn.shopify.com/s/files/1/1374/5287/files/Range_320x.png?v=1676979668" alt="147 health benefits" data-img="header" src="//cdn.shopify.com/s/files/1/1374/5287/files/Range_320x.png?v=1676979668" width="240" height="240"></a>
+                </div>
+                <h4 class="card-text">Daily Greens</h4>
+                <p class="card-desc">147 health benefits</p>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://huel.com/collections/huel-powder"><img class="HuelRange__img lazy loaded" data-src="//cdn.shopify.com/s/files/1/1374/5287/files/huel_black_edition_320x_0007837f-ee3e-44a0-b1e5-a778043289e5_320x.jpg?v=1614305385" alt="High-protein meal powders" data-img="header" src="//cdn.shopify.com/s/files/1/1374/5287/files/huel_black_edition_320x_0007837f-ee3e-44a0-b1e5-a778043289e5_320x.jpg?v=1614305385" data-was-processed="true" width="240"> </a>
+                </div>
+                <h4 class="card-text">Powders</h4>
+                <p class="card-desc">High-protein meal powders</p>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://huel.com/products/huel-hot-savoury"><img class="HuelRange__img lazy loaded" data-src="//cdn.shopify.com/s/files/1/1374/5287/files/huel_hot___savoury_320x_530b607d-7731-47ee-9603-29148b7ce50c_320x.jpg?v=1614305385" alt="Instant meals" data-img="header" src="//cdn.shopify.com/s/files/1/1374/5287/files/huel_hot___savoury_320x_530b607d-7731-47ee-9603-29148b7ce50c_320x.jpg?v=1614305385" data-was-processed="true" width="240"></a>
+                </div>
+                <h4 class="card-text">Hot & Savory</h4>
+                <p class="card-desc">Instant meal</p>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://huel.com/collections/huel-bars"><img class="HuelRange__img lazy loaded" data-src="//cdn.shopify.com/s/files/1/1374/5287/files/CP_BAR_Nav_FOR_US_6adc3656-342a-4f52-8a82-3ff1b8a301d8_320x.jpg?v=1658486554" alt="Complete protein bars" data-img="header" src="//cdn.shopify.com/s/files/1/1374/5287/files/CP_BAR_Nav_FOR_US_6adc3656-342a-4f52-8a82-3ff1b8a301d8_320x.jpg?v=1658486554" data-was-processed="true" width="240"></a>
+                </div>
+                <h4 class="card-text">Snacks</h4>
+                <p class="card-desc">Complete protein bars</p>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://huel.com/products/huel-ready-to-drink"><img class="HuelRange__img lazy loaded" data-src="//cdn.shopify.com/s/files/1/1374/5287/files/NEW-RTD-V1-Nav_320x_07acd1cc-ceb3-48e1-8ce0-8978220e4a4c_320x.jpg?v=1638372128" alt="Perfect for on‑the‑go" data-img="header" src="//cdn.shopify.com/s/files/1/1374/5287/files/NEW-RTD-V1-Nav_320x_07acd1cc-ceb3-48e1-8ce0-8978220e4a4c_320x.jpg?v=1638372128" data-was-processed="true" width="240"></a>
+                </div>
+                <h4 class="card-text">Drinks</h4>
+                <p class="card-desc">Perfect for on-the-go</p>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://huel.com/products/huel-bestseller-bundle"><img class="HuelRange__img lazy loaded" data-src="//cdn.shopify.com/s/files/1/1374/5287/files/BSB_Range_320x.jpg?v=1680079971" alt="Get started with Huel" data-img="header" src="//cdn.shopify.com/s/files/1/1374/5287/files/BSB_Range_320x.jpg?v=1680079971" data-was-processed="true" width="240"></a>
+                </div>
+                <h4 class="card-text">Bestseller bundle</h4>
+                <p class="card-desc">Get started with Huel</p>
+            </div>
+        </div>        
+    </section>
+</section>
+
+<section class="newsletter-main">
+    <div class="newsletter-section">
+        <div class="newsletter-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"><path d="M 4.784 31.216 C 4.372 30.804 3.705 30.804 3.293 31.216 L 0.309 34.199 C -0.103 34.611 -0.103 35.279 0.309 35.691 C 0.721 36.103 1.389 36.103 1.801 35.691 L 4.784 32.708 C 5.196 32.296 5.196 31.628 4.784 31.216 Z M 10.751 31.216 C 10.339 30.804 9.672 30.804 9.26 31.216 L 6.276 34.199 C 5.864 34.611 5.864 35.279 6.276 35.691 C 6.688 36.103 7.356 36.103 7.768 35.691 L 10.751 32.708 C 11.163 32.296 11.163 31.628 10.751 31.216 Z M 4.784 25.249 C 4.372 24.837 3.705 24.837 3.293 25.249 L 0.309 28.232 C -0.103 28.644 -0.103 29.312 0.309 29.724 C 0.721 30.136 1.389 30.136 1.801 29.724 L 4.784 26.741 C 5.196 26.329 5.196 25.661 4.784 25.249 Z M 35.075 9.876 L 26.124 0.925 C 24.89 -0.309 22.882 -0.308 21.649 0.925 L 5.24 17.335 C 4.01 18.564 3.998 20.568 5.24 21.81 L 14.19 30.76 C 15.427 31.997 17.429 31.997 18.665 30.76 L 35.075 14.351 C 36.306 13.119 36.31 11.112 35.075 9.876 Z M 22.495 3.063 L 20.817 15.597 C 20.754 16.068 20.382 16.44 19.912 16.503 L 7.377 18.181 Z M 15.926 29.451 C 15.836 29.402 15.754 29.341 15.682 29.269 L 6.8 20.387 L 17.087 19.01 Z M 18.181 28.261 L 19.241 18.721 L 20.192 18.594 C 21.602 18.405 22.719 17.288 22.908 15.877 L 23.035 14.927 L 32.576 13.867 Z M 23.324 12.772 L 24.701 2.486 L 33.583 11.368 C 33.655 11.44 33.716 11.522 33.765 11.612 Z" fill="rgb(255, 255, 255)"></path></svg>
+            <h1 class="vip-text" >Join our VIP list</h1>
+
+        </div>
+        <div>
+            <p class="para">Never miss out on new products, exclusive offers, and more when you join the Huel mailing list.</p>
+        </div>
+           
+    </div>
+    <section>
+        <section class="right-side-form">
+            <div>
+                <form class="form">
+                    <label></label>
+                    <input class="email-signup" type="email" placeholder="Enter your email address">
+                     <div>
+                        <input class="submit" type="submit" value="Sign Up">
+                     </div>
+                </form>
+            </div>
+            <div class="recaptcha">
+                <p>
+                    This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a>  apply. You can unsubscribe at any time.   
+                </p>      
+             </div>
+
+
+        </section>
+        
+    </section>
+
+</section>
+
+<div class="divider">
+    <div class="language">
+        <ul>
+        <li>Huel Global</li>
+        </ul>
+        <ul>
+            <li> <a href="#">Denmark</a></li>
+        </ul>
+        <ul>
+            <li> <a href="#">Europe</a></li>
+        </ul>
+        <ul>
+            <li> <a href="#">Germany</a></li>
+         </ul>
+        <ul>
+            <li> <a href="#">United Kingdom</a></li>
+         </ul>
+        <ul>
+            <li> <a href="#">Japan</a></li>
+        </ul>
+
+    </div>
+</div>                        
+<div>
+    <h1 class="huel-main">Huel &copy</h1>
+</div>
+
+
+<footer class="footer-main">
+    
+     
+
+    <div class="footer-content ">
+        <div>
+            <ul class="footer-point">
+
+                <li>Our Products</li>
+            
+                <li><a href="/products/huel-daily-greens" title="">Daily Greens</a></li>
+            
+                <li><a href="/products/huel-complete-protein" title="">Complete Protein</a></li>
+            
+                <li><a href="/products/huel-hot-savoury" title="">Hot &amp; Savory</a></li>
+            
+                <li><a href="/collections/huel-powder" title="">Powder</a></li>
+            
+                <li><a href="/products/huel-ready-to-drink" title="">Ready-to-drink</a></li>
+            
+                <li><a href="https://huel.com/products/huel-complete-protein-bar" title="">Complete Protein Bar</a></li>
+            
+                <li><a href="/products/huel-bar" title="">Bars</a></li>
+            
+                <li><a href="https://huel.com/collections/flavor-boosts" title="">Flavor Boosts</a></li>
+            
+                <li><a href="/collections/merch" title="">Accessories</a></li>
+            
+            </ul>
+
+        </div>
+        <div>
+            <ul >
+
+                <li>About Us</li>
+            
+                <li><a href="/pages/nutritional-information" title="">Nutrition</a></li>
+            
+                <li><a href="/pages/about-us" title="">About Huel</a></li>
+            
+                <li><a href="/pages/press-coverage" title="">Press</a></li>
+            
+                <li><a href="/account/login" title="">Account</a></li>
+            
+                <li><a href="http://careers.huel.com/" title="">Careers</a></li>
+            
+                <li><a href="https://huel.com/pages/join-our-influencer-program" title="">Collab with us</a></li>
+            
+                <li><a href="/pages/military-discount" title="">Military discount</a></li>
+            
+                <li><a href="/pages/official-huel-discount-codes" title="">Huel Discount Codes</a></li>
+            
+                <li><a href="/pages/student-discount" title="">Student discount</a></li>
+            
+                <li><a href="/pages/medical-discount" title="">Medical staff discount</a></li>
+            
+                <li><a href="/pages/first-responders-discount" title="">First responders discount</a></li>
+            
+                <li><a href="/pages/huel-modern-slavery-statement-2021" title="">Modern slavery statement</a></li>
+            
+            </ul>
+
+        </div>
+       <div>
+        <ul >
+
+            <li>Help</li>
+        
+            <li><a href="/pages/faq" title="">FAQs and help center</a></li>
+        
+            <li><a href="/pages/contact-us" title="">Contact us</a></li>
+        
+            <li><a href="/pages/delivery-questions" title="">Shipping</a></li>
+        
+            <li><a href="/pages/terms-and-conditions" title="">Terms</a></li>
+        
+            <li><a href="/pages/privacy-policy" title="">Privacy</a></li>
+        
+            <li><a href="/pages/refund-policy" title="">Returns</a></li>
+        
+        </ul>
+
+       </div>
+       <div>
+        <div class="footer-panel">
+            <div class="separator">
+            </div>
+            <div class="icons-container">
+                <div class="icons">
+                    <div class="icons-social">
+                        <a href="https://www.facebook.com/huelusa/" target="_blank" class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path></svg></a>
+                        <a href="https://twitter.com/huelusa" target="_blank" class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+                        </a>
+                        <a href="https://www.instagram.com/huel/" target="_blank" class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCMgGnTAgXIRASCT9aclAupQ" target="_blank" class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="icons-payment">
+                <img loading="lazy" src="//cdn.shopify.com/s/files/1/1374/5287/files/visa_67ec5301-9252-4e0c-a6a0-3e43d55fd123.png?v=1613532516" alt="Visa" height="24">
+                <img loading="lazy" src="//cdn.shopify.com/s/files/1/1374/5287/files/mastercard_ae66f22c-f370-4aed-bfea-3abafd8056bb.png?v=1613532516" alt="Mastercard" height="24">
+                <img loading="lazy" src="//cdn.shopify.com/s/files/1/1374/5287/files/apple-pay-logo.png?v=1613723212" alt="Maestro" height="24">
+                <img loading="lazy" src="//cdn.shopify.com/s/files/1/1374/5287/files/Amex_logo.png?v=1614306567" alt="American Express" height="24">
+                <img loading="lazy" src="//cdn.shopify.com/s/files/1/1374/5287/files/paypal_d1120eba-6103-4e78-acbe-3620fb132e11.png?v=1614302366" alt="Paypal" height="24">
+                <img loading="lazy" src="//cdn.shopify.com/s/files/1/1374/5287/files/Klarna_marketing_badge_pink_rgb.png?v=1644324195" alt="Amazon" height="24">
+
+            </div>
+            <div class="footer-copywrite">
+                <p>© 2015 - 2023 Huel Inc.</p>
+            </div>
+
+        </div>
+
+
+    </div>
+       
+   
+   
+</footer>
+
+
+</body>
+</html>
