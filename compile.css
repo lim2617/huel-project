@@ -30,7 +30,7 @@ html {
 
 body {
     color: #0b0b0b;
-    
+    background-color: #f6f6f6;
 }
 
 .navigation{
@@ -200,7 +200,6 @@ body {
     position: fixed;
     top: -23rem;
     z-index: -5;
-    opacity: 0;
     transition: transform 0.4s, opacity 0.2s;
 }
 
@@ -295,7 +294,6 @@ body {
     background-color: white;
     display: flex;
     justify-content: center;
-    opacity: 1;
     transition: transform 0.4s, opacity 0.5s;
 }
 .nutrition-content li{
@@ -444,11 +442,9 @@ body {
 
 @media (min-width:1025px){
     .menu__products:hover .products-content{
-        opacity: 1;
         transform: translateY(26rem);
     }
     .menu__nutrition:hover .nutrition-content{
-        opacity: 1;
         transform: translateY(6rem);
     }
     .menu__nutrition:hover ~ .backdrop, .menu__products:hover ~ .backdrop{
@@ -458,9 +454,6 @@ body {
 
 /* mobile or tablet size */
 @media (max-width:1024px){
-    .navigation{
-        position: relative;
-    }
     .nav__bar{
         justify-content: space-between;
     }
@@ -472,18 +465,18 @@ body {
     }
     .nav__logo{
         border: none;
-        /* flex:1 ;  */
     }
     .nav__menu{
         position: absolute;
         top: 3rem;
         right: 120%;
         width: 100vw;
-        height: 200vh;
+        height: 100vh;
         flex-direction: column;
         font-size: 1rem;
-        /* z-index: 30; */
         transition: 0.5s;
+        overflow-y: scroll;
+        padding-bottom: 8rem;
     }
     .nav__menuItem{
         justify-content: space-between;
@@ -580,7 +573,7 @@ body {
     }
     #mobile-search{
         position: absolute;
-        top: 10rem;
+        inset: 0;
         height: 4.5rem;
         padding: 1.5rem 1.5rem;
         background-color: rgb(246, 246, 246);
@@ -612,11 +605,6 @@ body {
 }
 
 /* ellie css*/
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-}
 
 .banner { 
     width: auto;
@@ -1211,11 +1199,6 @@ body {
     
 }
 
-body {
-    background-color: #f6f6f6;
-    
-   
-}
 
 .card-section {
     max-width: none;
@@ -1298,14 +1281,11 @@ body {
 ul {
     list-style-type: none;
     text-decoration: none;
-    
 }
 
-a:link {
+.newsletter-main a, .divider a, .footer-main a{
     text-decoration: none;
     color: #898989;
- 
-   
 }
 
 .divider {
